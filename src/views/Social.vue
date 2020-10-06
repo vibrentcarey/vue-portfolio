@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Social page</h1>
+ 
   </div>
 </template>
 
