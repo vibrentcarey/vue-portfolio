@@ -1,8 +1,10 @@
 <template>
   <div id="home">
     <h1>Home page</h1>
-    <Button @toggleForm="toggleForm" v-if="!showForm" onClick='toggleForm' title="Hire Me" color='#FF8383'></Button>
-    <Form v-else @close-form="toggleForm"/>
+    <Button @toggleForm="toggleForm"  v-if='!showForm' onClick='toggleForm' title="Hire Me" color='#FF8383'></Button>
+    <transition name='fade'>
+    <Form v-if="showForm" @close-form="toggleForm"/>
+    </transition>
   </div>
 </template>
 
@@ -33,5 +35,11 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 </style>
