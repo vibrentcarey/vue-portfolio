@@ -1,6 +1,5 @@
 <template>
   <div id='social-page'>
-    <h1>Social page</h1>
     <div id="social">
     <div class='social resume'>
     <a class="fa fa-briefcase" target="_blank" href="https://www.canva.com/design/DAEHtQ6TbyA/7N5Utpi4Z0AEL17jRBBy4g/view?utm_content=DAEHtQ6TbyA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" ><span>My Resume</span></a>
@@ -22,17 +21,28 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@media only screen and (max-width: 600px) {
+#social {
+  width: 100vw;
+}
+.social {
+  width: 100vw;
+  height: auto;
+}
+}
 #social {
   display: flex;
 align-items: center;
+  flex-direction: column;
 justify-content: center;
+width: 100vw;
 }
 .social {
-  width: 40vw;
-  height: 30vh;
+  width: 50vw;
+  height: auto;
   background-color: #FFAEAF;
   border-radius: 1em;
-  margin: 1em;
+  margin: 2em;
 }
 .social.resume {
   display: flex;

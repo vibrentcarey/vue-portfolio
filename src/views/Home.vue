@@ -1,6 +1,5 @@
 <template>
   <div id="home">
-    <h1>Home page</h1>
     <Button @toggleForm="toggleForm"  v-if='!showForm' onClick='toggleForm' title="Hire Me" color='#FF8383'></Button>
     <transition name='fade'>
     <Form v-if="showForm" @close-form="toggleForm"/>

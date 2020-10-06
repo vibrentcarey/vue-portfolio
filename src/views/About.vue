@@ -47,7 +47,7 @@ align-items: center;
   height: auto;
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   margin: 2em;
 }
 </style>

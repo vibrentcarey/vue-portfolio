@@ -19,7 +19,10 @@
 <style>
 body {
   margin: 0;
+  padding: 0;
   background-color: #f6f6f6;
+  height: 100vh;
+  width: 100vw;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -28,6 +31,7 @@ body {
   text-align: center;
   color: #6f6f6f;
   height: 100vh;
+  width: 100vw;
 }
 
 #nav {
@@ -41,13 +45,14 @@ body {
   width: 80vw;
   display: flex;
   justify-content: flex-end;
+  margin: 0;
 }
 
 #nav a {
   font-weight: bold;
   color: #aaaaaa;
   font-size: 2em;
-  margin: 0 1em;
+  margin: 0 .6em;
    text-decoration: none;
 }
 
@@ -68,5 +73,6 @@ body {
   left: 0;
   bottom: 0;
   width: 100vw;
+  margin: 0;
 }
 </style>
