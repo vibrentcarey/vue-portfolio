@@ -1,5 +1,6 @@
 <template>
   <div id='social-page'>
+    <h1>Resume and Social Media</h1>
     <div id="social">
     <div class='social resume'>
     <a class="fa fa-briefcase" target="_blank" href="https://www.canva.com/design/DAEHtQ6TbyA/7N5Utpi4Z0AEL17jRBBy4g/view?utm_content=DAEHtQ6TbyA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" ><span>My Resume</span></a>

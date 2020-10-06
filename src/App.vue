@@ -2,6 +2,7 @@
   <div id="app">
     <div id="nav">
       <div id="nav-left">
+        <img id='nav-img' src='../src/assets/brentLaptop.png'/>
         <router-link to="/">Home</router-link>
       </div>
       <div id="nav-right">
@@ -47,6 +48,10 @@ body {
   justify-content: flex-end;
   margin: 0;
 }
+#nav-left{
+  display: flex;
+  align-items: center;
+}
 
 #nav a {
   font-weight: bold;
@@ -73,6 +78,11 @@ body {
   left: 0;
   bottom: 0;
   width: 100vw;
+  margin: 0;
+}
+#nav-img {
+  height: 3em;
+  border-radius: 50%;
   margin: 0;
 }
 </style>
