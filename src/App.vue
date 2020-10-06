@@ -85,4 +85,9 @@ body {
   border-radius: 50%;
   margin: 0;
 }
+@media only screen and (max-width: 600px) {
+  #nav-img {
+display: none;
+  }
+}
 </style>
