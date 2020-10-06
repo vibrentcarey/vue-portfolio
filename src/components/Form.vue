@@ -1,6 +1,6 @@
 <template>
   <div id="form">
-    <h3>Enter your details below:</h3>
+    <h2>Enter your details below:</h2>
     <form @submit.prevent='handleFormSubmit' id="form-details">
       <label for="fname">First Name:</label>
       <input name="fname" v-model="fname" placeholder="Enter first name..." />
