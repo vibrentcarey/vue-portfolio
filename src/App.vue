@@ -62,6 +62,10 @@ body {
 
 #footer {
   background-color: #ffe2e2;
-  height: 5vh;
+  height: 4vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
 }
 </style>
