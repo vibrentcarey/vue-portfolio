@@ -21,5 +21,6 @@ export default {
     border-radius: 1em;
     display: inline-block;
     padding: 1em;
+    
   }
 </style>
