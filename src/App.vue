@@ -35,6 +35,7 @@ body {
   background-color: #ffe2e2;
   display: flex;
   align-items: center;
+  width: 100vw;
 }
 #nav-right {
   width: 80vw;
