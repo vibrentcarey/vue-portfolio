@@ -1,16 +1,20 @@
 <template>
   <div id="home">
     <h1>Home page</h1>
-    <button v-if="!showForm" @click='toggleForm'>Hire Me</button>
-    <Form v-else/>
+    <Button @toggleForm="toggleForm" v-if="!showForm" onClick='toggleForm' title="Hire Me" color='#FF8383'></Button>
+    <Form v-else @close-form="toggleForm"/>
   </div>
 </template>
 
 <script>
 import Form from "../components/Form";
+import Button from '../components/Button'
 export default {
   name: "Home",
-  components: { Form },
+  components: { Form, Button },
+  created() {
+    this.showForm = false
+  },
   data() {
     return {
     showForm: false,
@@ -19,7 +23,7 @@ export default {
   methods: {
     toggleForm() {
     this.showForm = !this.showForm;
-    }
+    },
   }
 };
 </script>

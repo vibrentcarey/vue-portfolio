@@ -46,6 +46,8 @@ align-items: center;
   width: 80vw;
   height: auto;
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
+  margin: 2em;
 }
 </style>
