@@ -17,13 +17,13 @@ export default {
   #hobby-card {
     background-color: #ffc7c7;
     height: auto;
-    width: auto;
+    width: 25vw;
     margin: 1em;
     border-radius: 1em;
     display: inline-block;
     padding: 1em;
   }
   img{
-    height: 60%
+    height: 20vh;
   }
 </style>

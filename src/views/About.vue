@@ -18,7 +18,7 @@ export default {
         {
           title: "Piano",
           imageLink: "piano.jpeg",
-          description: "I started teaching myself this year!"
+          description: "I started learning this year!"
         },
         {
           title: "Video Games",
