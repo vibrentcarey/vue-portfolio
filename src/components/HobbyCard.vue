@@ -16,8 +16,8 @@ export default {
 <style lang="css">
   #hobby-card {
     background-color: #ffc7c7;
-    height: 40vh;
-    width: 25vw;
+    height: auto;
+    width: auto;
     margin: 1em;
     border-radius: 1em;
     display: inline-block;
