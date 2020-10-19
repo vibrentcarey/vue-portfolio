@@ -61,10 +61,10 @@ export default {
 }
 /*button bounce in */
 .bounce-enter-active {
-  animation: bounce-in 1s;
+  animation: bounce-in 2s;
 }
 .bounce-leave-active {
-  animation: bounce-in 1s reverse;
+  animation: bounce-in 2s reverse;
 }
 @keyframes bounce-in {
   0% {

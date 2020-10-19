@@ -10,7 +10,10 @@
         <router-link to="/about">About</router-link>
       </div>
     </div>
-    <router-view />
+    <transition name='slide' mode='out-in'>
+     <router-view />
+    </transition>
+   
     <footer id="footer">
       <h6>Copyright</h6>
     </footer>
@@ -18,6 +21,15 @@
 </template>
 
 <style>
+.slide-enter-active {
+  transition: 1s;
+}
+.slide-enter {
+  transform: translate(100%, 0);
+}
+/* .slide-leave-to {
+  transform: translate(-100%, 0);
+} */
 body {
   margin: 0;
   padding: 0;
