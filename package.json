@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@growthbunker/vuesocial": "^0.1.2",
+    "animate.css": "^4.1.1",
     "core-js": "^3.6.5",
     "firebase": "^7.22.1",
     "vue": "^2.6.11",

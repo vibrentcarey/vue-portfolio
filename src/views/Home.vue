@@ -1,7 +1,10 @@
 <template>
   <div id="home">
     <h1>Hi my name is Brent!</h1>
-    <img src='../assets/brent.png'/>
+    <transition name="fade" appear>
+      <img v-if='showImage' src='../assets/brent.png'/>
+    </transition>
+  
     <h3>I am an aspring web developer <br/>
     who would like to master this craft! </h3>
 
@@ -20,10 +23,12 @@ export default {
   components: { Form, Button },
   created() {
     this.showForm = false
+    this.showImage = true
   },
   data() {
     return {
     showForm: false,
+    showImage: false
     }
   },
   methods: {
@@ -41,7 +46,7 @@ export default {
   flex-direction: column;
 }
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 1s;
+  transition: opacity 2s;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;

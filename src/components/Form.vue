@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     handleFormSubmit(){
-      if(this.fname && this.lname && this.companyName){
+      if(this.fname && this.lname && this.companyName && this.email && this.phone){
       db.collection('employers').add({
         firstName: this.fname,
         lastName: this.lname,
