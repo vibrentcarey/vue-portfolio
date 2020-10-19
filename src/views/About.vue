@@ -3,7 +3,7 @@
     <h1>My Hobbies Include</h1>
     <div id="hobby-box">
 
-      <HobbyCard v-for="hobby in hobbies" :key="hobby.title" :title="hobby.title" :description="hobby.description" />
+      <HobbyCard v-for="hobby in hobbies" :imgSrc="hobby.imageLink" :key="hobby.title" :title="hobby.title" :description="hobby.description" />
     </div>
   </div>
 </template>
@@ -17,17 +17,17 @@ export default {
       hobbies: [
         {
           title: "Piano",
-          imageLink: "",
+          imageLink: "piano.jpeg",
           description: "I started teaching myself this year!"
         },
         {
-          title: "Nintendo Switch",
-          imageLink: "",
+          title: "Video Games",
+          imageLink: "game.jpeg",
           description: "Mainly Super Smash Bros!"
         },
         {
           title: "Ping Pong",
-          imageLink: "",
+          imageLink: "pong.jpeg",
           description: "My favourite sport to play!"
         }
       ]
