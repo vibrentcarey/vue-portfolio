@@ -40,7 +40,8 @@ export default {
       email: "",
       phone: '',
       feedback:'',
-      success:''
+      success:'',
+      submitted: false
     };
   },
   methods: {
@@ -53,7 +54,6 @@ export default {
         email: this.email,
         phone: this.phone
       });
-      
       this.success ='Thank you I will get back to you ASAP!'
   
       setTimeout(()=>{
