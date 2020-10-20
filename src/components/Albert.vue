@@ -1,11 +1,13 @@
 <template>
   <div id="albert">
     <h1>Albert Collage</h1>
-    <div id="albert-box">
-      <div class="albert-pics" v-for="image in images" :key="image">
-        <img :src="require(`../assets/${image}.jpeg`)" />
+    <transition name="fade" appear>
+      <div id="albert-box">
+        <div class="albert-pics" v-for="image in images" :key="image">
+          <img :src="require(`../assets/${image}.jpeg`)" />
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -26,22 +28,20 @@ export default {
   flex-wrap: wrap;
 }
 .albert-pics {
-  background-color: #FEE2E2;
-  height: 30vh;
-  width: 15vw;
-  margin: 2em;
-  border-radius: .5em;
-}
-.albert-pics img {
-
- max-width: 12vw;
- max-height: 28vh;
+  background-color: #fee2e2;
+  margin: 1em;
+  border-radius: 0.2em;
 }
 
-img{
-  height: 90%;
-  width: auto;
-  margin: .5em;
-  border-radius: .5em;
+img {
+  margin: 1em;
+  border-radius: 0.2em;
+}
+
+.fade-enter{
+  opacity: 0;
+}
+.fade-enter-active{
+  transition: opacity 5s;
 }
 </style>
