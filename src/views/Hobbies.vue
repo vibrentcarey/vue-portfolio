@@ -40,7 +40,7 @@ export default {
           title: "Cat Parenting",
           imageLink: "albert-main.jpeg",
           description: "My cat son Albert!",
-          route: "/albert"
+          route: "hobbies/albert"
         }
       ]
     };

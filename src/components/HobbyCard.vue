@@ -3,13 +3,14 @@
     <h2>{{title}}</h2>
       <img :src="require(`../assets/${imgSrc}`)"/>
     <h4>{{description}}</h4>
+    <router-link tag="h3" :to='route'>Click For More</router-link>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HobbyCard',
-  props: ['title','description','imgSrc']
+  props: ['title','description','imgSrc', 'route']
 }
 </script>
 
@@ -25,5 +26,12 @@ export default {
   }
   img{
     height: 20vh;
+  }
+  h3{
+    color: #FF8382
+  }
+  h3:hover{
+    color: red;
+    cursor: pointer;
   }
 </style>

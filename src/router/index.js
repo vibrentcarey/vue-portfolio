@@ -1,8 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import About from '../views/About.vue'
+import Hobbies from '../views/Hobbies.vue'
 import Social from '../views/Social.vue'
+import Albert from '../components/Albert.vue'
+import HobbyList from '../views/HobbyList.vue'
 
 
 Vue.use(VueRouter);
@@ -14,9 +16,13 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    component: About
+    path: "/hobbies",
+    name: "HobbyList",
+    component: HobbyList,
+    children: [
+      {path: '', component: Hobbies},
+      {path:'/hobbies/albert',component: Albert }
+    ]
   },
   {
     path: "/social",

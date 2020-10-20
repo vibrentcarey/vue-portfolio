@@ -7,7 +7,7 @@
       </div>
       <div id="nav-right">
         <router-link :to="{name:'Social'}">Social</router-link>
-        <router-link to="/about">About</router-link>
+        <router-link to="/hobbies">Hobbies</router-link>
       </div>
     </div>
     <transition name='slide' mode='out-in'>
